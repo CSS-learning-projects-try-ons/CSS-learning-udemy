@@ -1,5 +1,5 @@
 * {
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -24,17 +24,31 @@ body {
     font-family: 'Anton', sans-serif;
 }
 
-/* h1 {
-    font-family: sans-serif;
-} */
-
 .main-header {
     background-color: #2ddf5c;
     color: white;
+    padding: 0 10px;
+}
+
+.brand-name-container {
+    display: inline-block;
+    /* div will be aligned in the middle of parent vertically*/
+    vertical-align: middle;
+}
+
+.brand-name-container a {
+    font-weight: bold;
+    font-size: 42px;
+    text-decoration: none;
 }
 
 .main-nav {
-    display: inline;
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 145px);
+    color: #0e4f1f; 
+    /* nav will be aligned in the middle of parent vertically*/
+    vertical-align: middle;
 }
 
 .main-nav__list {
@@ -44,16 +58,11 @@ body {
 .main-nav__item {
     /* so that li elements appear in same line and we adjust width/height of those*/
     display: inline-block;
-    padding: 10px 30px;
-    width: 200px;
+    padding: 0 10px;
+    /* width: 200px; */
 }
 
 .main-nav__item a {
     color: white;
     text-decoration: none;
-    font-weight: 400;
-}
-
-.brand-name-container {
-    display: inline;
 }
