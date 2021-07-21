@@ -184,3 +184,30 @@ body {
     width: 30%;
     vertical-align: top;
 }
+
+.main-footer {
+    background-color: black;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.main-footer__list {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-footer__list li {
+    display: inline-block;
+    padding: 0 16px;
+}
+
+.main-footer__list li a {
+    text-decoration: none;
+    color: white;
+}
+
+.main-footer__list a:hover {
+    color: #aba4a6;
+}
