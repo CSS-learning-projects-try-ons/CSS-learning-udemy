@@ -114,3 +114,44 @@ body {
     box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.6);
     border-radius: 4px;
 }
+
+.plan > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.plan > ul > li {
+    margin: 8px;
+}
+
+.plan__title {
+    color: #20733b
+}
+
+.plan__price {
+    color: #7a7d7a
+}
+
+.button {
+    background-color: #20733b;
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+    font-family: inherit;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+    background-color: white;
+    color: #20733b; 
+    border: 1px solid #20733b
+}
+
+/* remove outline property of focussed button */
+.button:focus-visible {
+    outline: none;
+}
