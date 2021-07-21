@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.main-header {
+    background-color: #2ddf5c;
+    color: white;
+    padding: 0 10px;
+}
+
+
+.brand-name-container {
+    display: inline-block;
+    /* div will be aligned in the middle of parent vertically*/
+    vertical-align: middle;
+}
+
+.brand-name-container a {
+    font-weight: bold;
+    font-size: 42px;
+    text-decoration: none;
+}
+
+.main-nav {
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 145px);
+    color: #0e4f1f; 
+    /* nav will be aligned in the middle of parent vertically*/
+    vertical-align: middle;
+}
+
+.main-nav__list {
+    list-style-type: none;
+}
+
+.main-nav__item {
+    /* so that li elements appear in same line and we adjust width/height of those*/
+    display: inline-block;
+    padding: 0 10px;
+    /* width: 200px; */
+}
+
+.main-nav__item a {
+    color: #0e4f1f  ;
+    text-decoration: none;
+    padding-bottom: 6px;
+    font-weight: bold;
+}
+
+.main-nav__item:not(:last-child) a:hover,
+.main-nav__item:not(:last-child) a:active {
+    color: white;
+    border-bottom: 2px solid white;
+    padding-bottom: 6px;
+}
+
+.main-nav__item--cta a{
+    padding: 6px;
+    color: white;
+    background-color: #ff1b68;
+    border-radius: 8px;
+}
+
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active {
+    color: #ff1b68;
+    background-color: white;
+}
+
+
+
+.button {
+    background-color: #20733b;
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+    font-family: inherit;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+    background-color: white;
+    color: #20733b; 
+    border: 1px solid #20733b
+}
+
+/* remove outline property of focussed button */
+.button:focus-visible {
+    outline: none;
+}
+
+.main-footer {
+    background-color: black;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.main-footer__list {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-footer__list li {
+    display: inline-block;
+    padding: 0 16px;
+}
+
+.main-footer__list li a {
+    text-decoration: none;
+    color: white;
+}
+
+.main-footer__list a:hover {
+    color: #aba4a6;
+}
