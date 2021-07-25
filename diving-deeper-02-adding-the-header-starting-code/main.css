@@ -1,9 +1,17 @@
+main {
+    margin-top: 51.2px;
+}
+
 #product-overview {
     background: url('images/freedom.jpg');
     width: 100%;
     height: 528px;
     padding: 10px;
     
+}
+
+#plans {
+    text-align: center;
 }
 
 .section-title {
