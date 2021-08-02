@@ -1,5 +1,7 @@
 main {
-    margin-top: 48px;
+    margin-top: 60px;
+    position: relative;
+    z-index: -1;
 }
 
 .plan {
@@ -87,4 +89,5 @@ main {
 #plus-badge {
     position: absolute;
     right: 20px;
+    z-index: 10;
 }
