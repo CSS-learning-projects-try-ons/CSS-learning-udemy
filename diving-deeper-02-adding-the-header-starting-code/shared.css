@@ -29,6 +29,15 @@ body {
     font-weight: bold;
     font-size: 42px;
     text-decoration: none;
+    height: 30px;
+    /* width: 30px; */
+    display: inline-block;
+}
+
+.brand-name-container a img {
+    height: 100%;
+    /* width: 100%; */
+    /* margin-top: -20px; */
 }
 
 .main-nav {
