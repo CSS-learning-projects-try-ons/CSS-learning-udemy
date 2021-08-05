@@ -20,6 +20,8 @@ body {
 
 #plans {
     text-align: center;
+    width: 80%;
+    margin: auto;
 }
 
 #product-overview__slogan {
