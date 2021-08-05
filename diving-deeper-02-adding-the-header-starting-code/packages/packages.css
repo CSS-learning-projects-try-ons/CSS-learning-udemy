@@ -1,5 +1,5 @@
 main {
-    margin-top: 60px;
+    margin-top: 3.75rem;
     position: relative;
     z-index: -1;
 }
@@ -7,8 +7,8 @@ main {
 .plan {
     border: 4px solid #32633f;
     border-left: none;
-    margin: 20px 0;
-    padding: 20px;
+    margin: 1.25rem 0;
+    padding: 1.25rem;
     width: 70%;
     background-color: #c7f0d1;
 }
@@ -36,8 +36,8 @@ main {
 .plan:last-of-type {
     border: 4px solid #32633f;
     border-left: none;
-    margin: 20px 0;
-    padding: 20px;
+    margin: 1.25rem 0;
+    padding: 1.25rem;
     width: 70%;
     background-color: #32633f;
     color: white
@@ -89,6 +89,6 @@ main {
 
 #plus-badge {
     position: absolute;
-    right: 20px;
+    right: 1.25rem;
     z-index: 10;
 }
