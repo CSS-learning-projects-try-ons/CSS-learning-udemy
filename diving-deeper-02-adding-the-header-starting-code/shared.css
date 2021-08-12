@@ -76,7 +76,7 @@ body {
     /* width: 200px; */
 }
 
-.main-nav__item a {
+.main-nav__item a, .mobile-nav__item a {
     color: #0e4f1f  ;
     text-decoration: none;
     padding-bottom: 6px;
@@ -90,7 +90,8 @@ body {
     padding-bottom: 6px;
 }
 
-.main-nav__item--cta a{
+.main-nav__item--cta a,
+.mobile-nav__item--cta a{
     padding: 6px;
     color: white;
     background-color: #ff1b68;
@@ -98,7 +99,9 @@ body {
 }
 
 .main-nav__item--cta a:hover,
-.main-nav__item--cta a:active {
+.main-nav__item--cta a:active,
+.mobile-nav__item--cta a:hover,
+.mobile-nav__item--cta a:active {
     color: #ff1b68;
     background-color: white;
 }
@@ -154,3 +157,57 @@ body {
 .main-footer__list a:hover {
     color: #aba4a6;
 }
+
+
+.mobile-nav {
+    display: none;
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    background: white;
+    width: 80%;
+    height: 100vh;
+  }
+  
+  .mobile-nav__items {
+    width: 90%;
+    height: 100%;
+    list-style: none;
+    margin: 10% auto;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .mobile-nav__item {
+    margin: 1rem 0;
+  }
+  
+  .mobile-nav__item a {
+    font-size: 1.5rem;
+  }
+  .toggle-button {
+    width: 3rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding-top: 0;
+    padding-bottom: 0;
+    vertical-align: middle;
+  }
+  
+  .toggle-button:focus {
+    outline: none;
+  }
+  
+  .toggle-button__bar {
+    width: 100%;
+    height: 0.2rem;
+    background: black;
+    display: block;
+    margin: 0.6rem 0;
+  }
+  
+  .open {
+      display: block !important;
+  }
