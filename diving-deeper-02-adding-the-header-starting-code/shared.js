@@ -6,12 +6,13 @@ var mobileNav = document.querySelector('.mobile-nav');
 document.querySelectorAll('.plan .button').forEach(element => {
     element.addEventListener('click', () => {
         backdrop.classList.add('open');
-        modal.classList.add('open');
+        if(modal)
+            modal.classList.add('open');
     })
 })
 
-
-document.querySelector('.modal__action--negative').addEventListener('click', closeModalAndBackdrop)
+if(document.querySelector('.modal__action--negative'))
+    document.querySelector('.modal__action--negative').addEventListener('click', closeModalAndBackdrop)
 
 backdrop.addEventListener('click', () => {
     mobileNav.classList.remove('open');
@@ -28,7 +29,8 @@ toggleButton.addEventListener('click', () => {
 
 function closeModalAndBackdrop() {
     backdrop.classList.remove('open');
-    modal.classList.remove('open');
+    if(modal)
+        modal.classList.remove('open');
     // backdrop.style.display = 'none';
     // modal.style.display = 'none';
 }
