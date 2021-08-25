@@ -139,20 +139,33 @@ body {
 
 .core-features__circle {
     background-color: #d6c5d5;
-    display: inline-block;
     width: 100px;
     height: 100px;
     border-radius: 50%;
     border: 2px solid #7a7d7a;
     padding: 20px;
+    margin: auto;
 }
 
 .core-features__list li{
-    display: inline-block;
     font-weight: bold;
     padding: 20px;
-    width: 30%;
-    vertical-align: top;
+    width: 100%;
+}
+
+@media (min-width: 40rem) {
+    .core-features__circle {
+        display: inline-block;
+    }
+
+    .core-features__list li {
+        display: inline-block;
+        width: 30%;
+        vertical-align: top;
+        max-width: 18rem;
+        min-width: 14rem;
+    }
+    
 }
 
 .modal {
