@@ -2,6 +2,8 @@ main {
     margin-top: 3.75rem;
     position: relative;
     z-index: -1;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .plan {
@@ -9,7 +11,7 @@ main {
     border-left: none;
     margin: 1.25rem 0;
     padding: 1.25rem;
-    width: 70%;
+    width: 80%;
     background-color: #c7f0d1;
 }
 .plan a{
@@ -38,7 +40,7 @@ main {
     border-left: none;
     margin: 1.25rem 0;
     padding: 1.25rem;
-    width: 70%;
+    width: 80%;
     background-color: #32633f;
     color: white
 }
@@ -91,4 +93,34 @@ main {
     position: absolute;
     right: 1.25rem;
     z-index: 10;
+}
+
+@media(min-width: 40rem) {
+    main {
+        max-width: 1000px;
+        /* margin: 3em auto; */
+    }
+}
+
+@media(min-width: 1000px) {
+    main {
+       
+        margin: 3em auto ;
+    }
+    .plan {
+       
+        margin: 1.25rem 1.25rem;
+        border-left: 4px solid #32633f;
+      
+    }
+
+    #free {
+        border-right: 4px solid #32633f;
+
+    }
+
+    .plan:last-of-type {
+       
+        margin: 1.25rem 1.25rem;
+    }
 }
