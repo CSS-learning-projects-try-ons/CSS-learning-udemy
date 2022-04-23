@@ -45,7 +45,7 @@ body {
     font-size: 1.5rem;
 }
 
-@media(min-width: 40rem) {
+@media(min-width: 40rem) and (orientation: portrait){
     #product-overview {
         background-position: left 50% top 10%;
     }
@@ -65,7 +65,7 @@ body {
     }
 }
 
-@media(min-width: 60rem) {
+@media(min-width: 60rem), (orientation: landscape){
     #product-overview {
         background-position: left 50% top 10%;
     }
