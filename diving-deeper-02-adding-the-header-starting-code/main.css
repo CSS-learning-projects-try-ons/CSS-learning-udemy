@@ -2,6 +2,8 @@ body {
     /* to remove horizontal scrollbar that appears because of width: 100vw*/
     overflow-x: hidden;
 }
+
+
 #product-overview {
     /* shorthand for below property related to background-image */
     background: url('images/freedom.jpg')  left 10% top 30%/cover no-repeat border-box padding-box;

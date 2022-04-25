@@ -38,7 +38,7 @@ body {
 .brand-name-container {
     display: inline-block;
     /* div will be aligned in the middle of parent vertically*/
-    vertical-align: middle;
+    /* vertical-align: middle; */
 }
 
 .brand-name-container a {
@@ -47,12 +47,12 @@ body {
     text-decoration: none;
     /* height: 32px; */
     display: inline-block;
+    vertical-align: auto;
 }
 
 .brand-name-container a img {
-    height: 32px;
-    /* width: 100%; */
-    /* margin-top: -20px; */
+    height: 2rem;
+    vertical-align: auto;
 }
 
 .main-nav {
