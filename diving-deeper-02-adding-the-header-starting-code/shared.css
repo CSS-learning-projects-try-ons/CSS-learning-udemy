@@ -123,6 +123,16 @@ body {
     border: 1px solid #20733b
 }
 
+button[disabled],
+button:disabled:hover,
+button:disabled:active {
+    background-color: #EEEEEE;
+    border-color: #EEEEEE;
+    cursor: not-allowed;
+    color: white;
+}
+
+
 /* remove outline property of focussed button */
 .button:focus-visible {
     outline: none;

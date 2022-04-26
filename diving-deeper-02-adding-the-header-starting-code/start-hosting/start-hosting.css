@@ -64,6 +64,12 @@ main {
     margin-top: 1rem;
 }
 
+/* .signup-form .invalid, */
+.signup-form :invalid{
+    background-color: #faccac;
+    border-color: red;
+}
+
 @media(min-width: 40rem) {
     .signup-form {
         width: 25rem;
