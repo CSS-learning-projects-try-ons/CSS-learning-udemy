@@ -89,6 +89,9 @@ main {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-style: italic;
+    line-height: 2;
+    /* text-decoration: underline 2px dotted grey; */
+    /* text-shadow: 2px 2px 2px #9d9e9d; */
 }
 
 
@@ -135,6 +138,7 @@ main {
 
     #free {
         border-right: 4px solid #32633f;
+    
 
     }
 
