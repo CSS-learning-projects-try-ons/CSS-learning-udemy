@@ -1,28 +1,38 @@
 .container {
     margin: 20px;
     display: grid;
-    height: 800px;
-    width: 800px;
+    height: 500px;
+   
     /* grid-template-columns: 200px 5rem 20% auto; */
-    grid-template-columns: repeat(4, 20%);
-    grid-template-rows: [row-1-start] 5rem [row-1-end row-2-start] minmax(10px, 40%) [row-2-end row-3-start] 100px [row-3-end];
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: [row-1-start] 5rem [row-1-end row-2-start] minmax(10px, auto) [row-2-end row-3-start] 100px [row-3-end];
     grid-column-gap: 20px;
     grid-row-gap: 10px;
     grid-gap: 10px;
     grid-template-areas: "header header header header"
-                        ". . main main"
+                        "sidebar . main main"
                         "footer footer footer footer";
     /* justify-items: center;
     align-items: flex-start; */
-    justify-content: center;
-    align-content: center;
+    /* justify-content: center;
+    align-content: center; */
+}
+
+@media (max-width: 40rem) {
+    .container {
+        grid-template-rows: [row-1-start] 5rem [row-1-end row-2-start] minmax(10px, 1fr) [row-2-end row-3-start] minmax(10px, 1fr) [row-3-end row-4-start] 100px [row-4-end];
+        grid-template-areas: "header header header header"
+                            "main main main main"
+                            "sidebar sidebar sidebar sidebar"
+                            "footer footer footer footer";
+    }
 }
 
 .el1 {
     background: rgba(255, 154, 72, 0.5);
     grid-area: main;
-    justify-self: center;
-    align-self: center;
+    /* justify-self: center;
+    align-self: center; */
 }
 
 .el2 {
@@ -32,7 +42,7 @@
 
 .el3 {
     background: rgba(0, 128, 0, 0.5);
-
+    grid-area: sidebar;
 }
 
 .el4 {
