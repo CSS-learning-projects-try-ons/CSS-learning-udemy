@@ -1,0 +1,38 @@
+/* html, body {
+    height: 100%;
+} */
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: [col-1-start] minmax(150px, 30%) [col-2-start] minmax(150px, 70%);
+    grid-template-rows: [row-1-start]  100px [row-2-start] auto [row-3-start]  150px;
+}
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+.header {
+    background-color: chocolate;
+    color: white;
+    grid-column-end: span 2;
+}
+
+.content {
+    background-color: blanchedalmond;
+    grid-column-start: col-2-start;
+    grid-row-start: row-2-start;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    grid-column-end: span 2;
+}
+
+.sidebar {
+    background-color: darkkhaki;
+    grid-column-start: col-1-start;
+    grid-row-start: row-2-start;
+}
