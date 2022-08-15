@@ -3,7 +3,7 @@
     display: grid;
     height: 400px;
     grid-template-columns: repeat(3,25%);
-    grid-template-rows: 5rem minmax(10px, 900px) 80px;
+    grid-template-rows: [row-1-start] 5rem [row-1-end row-2-start] minmax(10px, 900px) [row-2-end row-3-start] 80px;
 }
 
 .el1 {
@@ -13,14 +13,18 @@
 .el2 {
     background: rgba(255, 0, 0, 0.5);
     grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    grid-column-end: span 2;
+    grid-row-start: row-1-start;
+    grid-row-end: span 3;
+    /* z-index: 10; */
 }
 
 .el3 {
     background: rgba(0, 128, 0, 0.5);
-  
+    grid-row-start: 2;
+    grid-row-end: span 3;
+    grid-column-start: 1;
+    grid-column-end: span 2;
 }
 
 .el4 {
