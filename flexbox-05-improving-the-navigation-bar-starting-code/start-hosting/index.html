@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>uHost Signup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uHost</title>
     <link rel="shortcut icon" href="../favicon.png">
     <link rel="stylesheet" href="../shared.css">
     <link rel="stylesheet" href="start-hosting.css">
@@ -51,7 +51,7 @@
             </li>
         </ul>
     </nav>
-    <main class="signup-page">
+    <main>
         <h1 class="signup-title">Awesome! Let's dive right in!</h1>
         <form action="index.html" class="signup-form">
             <label for="title">Title</label>
@@ -67,11 +67,15 @@
             <input type="email" id="email" required>
             <label for="password">Password</label>
             <input type="password" id="password" required>
-            <input type="checkbox" id="agree-terms" required>
-            <label for="agree-terms">Agree to
-                <a href="#">Terms &amp; Conditions</a>
-            </label>
-            <button type="submit" class="button">Sign Up</button>
+            
+            <div id="agree-text">
+                <input type="checkbox" id="agree-terms" required>
+                <label for="agree-terms">Agree to
+                    <a href="#">Terms &amp; Conditions</a>
+                </label>
+            </div>
+                <button type="submit" class="button">Sign Up</button>
+           
         </form>
     </main>
     <footer class="main-footer">
