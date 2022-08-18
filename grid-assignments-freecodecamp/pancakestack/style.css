@@ -1,0 +1,15 @@
+html {
+    height: 100%;
+}
+body {
+    margin: 10px;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-row-gap: 1px;
+}
+
+body > div {
+    border: 3px solid orangered;
+    border-radius: 4px;
+}
