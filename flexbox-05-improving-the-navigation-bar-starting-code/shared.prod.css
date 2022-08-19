@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,400,900');
 @import url('https://fonts.googleapis.com/css?family=Anton');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
@@ -8,7 +15,8 @@
 }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -17,20 +25,25 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
+  display: -ms-grid;
   display: grid;
   height: 100%;
+  -ms-grid-rows: 3.5rem 5px 1fr 5px fit-content(8rem);
   grid-template-rows: 3.5rem 1fr fit-content(8rem);
-  grid-template-areas: "header"
+      grid-template-areas: "header"
                       "main"
                       "footer";
   grid-row-gap: 5px;
 }
 
 main {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
   /* min-height: calc(100vh - 3.5rem - 8rem); */
   /* margin-top: 3.5rem; */
   grid-area: main;
-  grid-row-start: 2;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
 }
 
 .backdrop {
@@ -45,6 +58,8 @@ main {
 }
 
 .main-header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   width: 100%;
    position: fixed;
    top: 0;
@@ -53,11 +68,15 @@ main {
   padding: 0.5rem 1rem;
   z-index: 60;
   display: -ms-flexbox;
-  display: -webkit-flex;
   display: --webkit-box;
+  display: -webkit-box;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   grid-area: header;
 }
 
@@ -107,6 +126,8 @@ main {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -151,12 +172,16 @@ main {
   }
 
   .main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     text-align: right;
   }
 }
 
 .main-footer {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
   background: black;
   padding: 2rem;
   /* margin-top: 3rem; */
@@ -168,8 +193,13 @@ main {
   margin: 0;
   padding: 0;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .main-footer__link {
@@ -202,10 +232,19 @@ main {
   list-style: none;
   padding: 0;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .mobile-nav__item {
@@ -250,8 +289,13 @@ main {
 
 @media (min-width: 40rem) {
   .main-footer__links {
-    flex-direction: row;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .main-footer__link {
     margin: 0 1rem;
