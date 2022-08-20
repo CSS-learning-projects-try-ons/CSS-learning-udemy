@@ -1,0 +1,7 @@
+$color : (main: #521751, secondary: #fa923f);
+$page-font-family: Arial, sans-serif;
+$border: 0.05rem solid map-get($map: $color, $key: main);
+$min-width-desktop: 40rem;
+$size-default: 1rem;
+$small-size: 0.2rem;
+$shadow: $small-size $small-size 0.1rem #ccc;
